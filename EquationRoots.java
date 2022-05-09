@@ -1,10 +1,10 @@
 import java.lang.Math;
 
-public class EquationRoot {
+public class EquationRoots {
     public static void main(String[] args){
-        double a = ler("a");
-        double b = ler("b");
-        double c = ler("c");
+        double a = read("a");
+        double b = read("b");
+        double c = read("c");
         double delta = (b * b) - (4 * a * c);
         if(delta < 0){
             System.out.println("Root isn't in the set of real numbers");
@@ -13,7 +13,7 @@ public class EquationRoot {
         System.out.printf("x1: %s\nx2: %s\n", (-b + Math.sqrt(delta)) / (2 * a), (-b - Math.sqrt(delta)) / (2 * a));
     }
 
-    private static double ler(String field){
+    private static double read(String field){
         System.out.printf("%s: ", field);
         double coef;
         try {
