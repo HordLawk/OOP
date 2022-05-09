@@ -1,9 +1,9 @@
 import java.io.IOException;
 import java.lang.Math;
 
-public class Exercicio8 {
+public class OtherFunction {
     public static void main(String[] args) throws IOException{
-        System.out.print("Chute inicial: ");
+        System.out.print("Initial estimate: ");
         double x0 = EntradaTeclado.leDouble();
         int n = 1;
         double x1 = x0 - (fn(x0) / dxfn(x0));
@@ -11,7 +11,7 @@ public class Exercicio8 {
             n++;
             x1 = (x0 = x1) - (fn(x0) / dxfn(x0));
         }
-        System.out.printf("Resultado: %s\nNumero de iteracoes: %s\n", x1, n);
+        System.out.printf("Result: %s\nNumber of iterations: %s\n", x1, n);
 
     }
 

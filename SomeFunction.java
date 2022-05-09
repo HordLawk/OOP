@@ -1,11 +1,11 @@
 import java.io.IOException;
 import java.lang.Math;
 
-public class Exercicio7 {
+public class SomeFunction {
     public static void main(String[] args) throws IOException{
-        System.out.print("Inicio do intervalo: ");
+        System.out.print("Start of range: ");
         double a = EntradaTeclado.leDouble();
-        System.out.print("Fim do intervalo: ");
+        System.out.print("End of range: ");
         double b = EntradaTeclado.leDouble();
         int n = 1;
         double c = (a + b) / 2;
@@ -19,7 +19,7 @@ public class Exercicio7 {
             }
             n++;
         }
-        System.out.printf("Resultado: %s\nNumero de iteracoes: %s\n", c, n);
+        System.out.printf("Result: %s\nNumber of iterations: %s\n", c, n);
     }
 
     private static double fn(double x){
